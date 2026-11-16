@@ -1,0 +1,4 @@
+order_id,amount,currency,region,qty,customer_name,note,legacy_code,created_at,gross_amount,deleted_flag
+000123,"1,234.50",CNY,华东,3,张三,1,X-1,2026-01-02 10:00:00,100.00,
+000124,99.00,CNY,华北,1,李四,2,X-2,2026-01-03 10:00:00,200.00,
+000125,10.50,USD,华南,7,王五,3,X-3,2026-01-04 10:00:00,300.00,

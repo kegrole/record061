@@ -1,0 +1,187 @@
+{
+  "v1_columns": [
+    {
+      "name": "order_id",
+      "type": "text",
+      "position": 0
+    },
+    {
+      "name": "amount",
+      "type": "float",
+      "position": 1
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "position": 2
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "position": 3
+    },
+    {
+      "name": "qty",
+      "type": "integer",
+      "position": 4
+    },
+    {
+      "name": "customer_name",
+      "type": "string",
+      "position": 5
+    },
+    {
+      "name": "note",
+      "type": "integer",
+      "position": 6
+    },
+    {
+      "name": "legacy_code",
+      "type": "string",
+      "position": 7
+    },
+    {
+      "name": "created_at",
+      "type": "date",
+      "position": 8
+    },
+    {
+      "name": "gross_amount",
+      "type": "float",
+      "position": 9
+    },
+    {
+      "name": "deleted_flag",
+      "type": "null",
+      "position": 10
+    }
+  ],
+  "v2_columns": [
+    {
+      "name": "order_id",
+      "type": "text",
+      "position": 0
+    },
+    {
+      "name": "amount",
+      "type": "float",
+      "position": 1
+    },
+    {
+      "name": "tax_rate",
+      "type": "float",
+      "position": 2
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "position": 3
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "position": 4
+    },
+    {
+      "name": "qty",
+      "type": "integer",
+      "position": 5
+    },
+    {
+      "name": "customer name",
+      "type": "string",
+      "position": 6
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "position": 7
+    },
+    {
+      "name": "created_ts",
+      "type": "date",
+      "position": 8
+    },
+    {
+      "name": "gross_amount_cny",
+      "type": "float",
+      "position": 9
+    },
+    {
+      "name": "deleted_flag",
+      "type": "null",
+      "position": 10
+    }
+  ],
+  "changes": [
+    {
+      "change": "added",
+      "field": "tax_rate",
+      "evidence": {
+        "position": 2,
+        "type": "float"
+      }
+    },
+    {
+      "change": "removed",
+      "field": "legacy_code",
+      "evidence": {
+        "position": 7,
+        "type": "string"
+      }
+    },
+    {
+      "change": "renamed",
+      "field": "created_at",
+      "evidence": {
+        "old_name": "created_at",
+        "new_name": "created_ts",
+        "similarity": 0.8
+      }
+    },
+    {
+      "change": "renamed",
+      "field": "gross_amount",
+      "evidence": {
+        "old_name": "gross_amount",
+        "new_name": "gross_amount_cny",
+        "similarity": 0.75
+      }
+    },
+    {
+      "change": "type_changed",
+      "field": "note",
+      "evidence": {
+        "old_type": "integer",
+        "new_type": "string"
+      }
+    },
+    {
+      "change": "reordered",
+      "field": null,
+      "evidence": {
+        "columns": [
+          [
+            "currency",
+            "region"
+          ]
+        ]
+      }
+    }
+  ],
+  "duplicate_primary_keys": {
+    "v1": [],
+    "v2": [
+      "000123"
+    ]
+  },
+  "summary": {
+    "added": 1,
+    "removed": 1,
+    "renamed": 2,
+    "type_changed": 1,
+    "reordered": 1,
+    "duplicate_primary_keys": 1,
+    "threshold": 0.6
+  }
+}

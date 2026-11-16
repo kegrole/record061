@@ -1,0 +1,4 @@
+order_id,amount,tax_rate,region,currency,qty,customer name,note,created_ts,gross_amount_cny,deleted_flag
+000123,"1,234.50",0.08,华东,CNY,3,张三,待补充,2026-01-02 10:00:00,100.00,
+000124,99.00,0.08,华北,CNY,1,李四,待补充,2026-01-03 10:00:00,200.00,
+000123,"1,234.50",0.08,华东,CNY,3,张三,待补充,2026-01-02 10:00:00,100.00,
